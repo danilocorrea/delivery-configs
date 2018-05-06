@@ -9,7 +9,7 @@ eureka:
     registerWithEureka: true
     fetchRegistry: false
     serviceUrl:
-      defaultZone: http://${eureka.instance.hostname}:${eurek.instance.port}/eureka/
+      defaultZone: http://${eureka.instance.hostname}:${eureka.instance.port}/eureka/
   server:
     wait-time-in-ms-when-sync-empty: 3000
     
@@ -27,7 +27,7 @@ spring:
   datasource:
     data: classpath:/sql/data.sql
     driver-class-name: com.mysql.jdbc.Driver
-    passowrd: 123456
+    passowrd: '123456'
     platform: mysql
     schema: classpath:/sql/shema.sql
     url: jdbc:mysql://localhost/oauth?verifyServerCertificate=false&useSSL=false&requireSSL=false
@@ -36,5 +36,5 @@ spring:
     database-platform: org.hibernate.dialect.MySQLDialect
     generate-ddl: false
     hibernate:
-    ddl-auto: none
+      ddl-auto: none
     show-sql: true
